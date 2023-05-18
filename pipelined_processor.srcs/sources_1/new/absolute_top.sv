@@ -47,6 +47,6 @@ module absolute_top(input logic clk, push_clock, push_reset, switch_clear,
                     
     pulse_controller pulse_two(clk, push_reset, switch_clear, deb_reset);   
     
-    display_controller dc(clk, ALUOutE[7:4], ALUOutE[3:0], PCF[7:4], PCF[3:0], seg, dp, an);
+    display_controller dc(clk, ALUOutE[7:4], ALUOutE[3:0], PCF[7:4], PCF[3:0], seg, dp, an); // only 2 LSB are shown
                    
 endmodule
