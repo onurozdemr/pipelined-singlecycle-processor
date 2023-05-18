@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../pipelined_processor.srcs/sources_1/new/HazardUnit.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/PipeDtoE.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/PipeEtoM.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/PipeFtoD.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/PipeMtoW.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/PipeWtoF.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/adder.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/alu.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/aludec.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/controller.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/datapath.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/dmem.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/imem.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/maindec.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/mux2.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/mux4.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/regfile.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/signext.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/sl2.sv" \
+"../../../../pipelined_processor.srcs/sources_1/new/top_mips.sv" \
+"../../../../pipelined_processor.srcs/sim_1/new/top_mips_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

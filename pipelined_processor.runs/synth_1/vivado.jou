@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 12 14:31:54 2023
+# Process ID: 17880
+# Current directory: C:/Users/Onur Ozdemir/pipelined_processor/pipelined_processor.runs/synth_1
+# Command line: vivado.exe -log absolute_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source absolute_top.tcl
+# Log file: C:/Users/Onur Ozdemir/pipelined_processor/pipelined_processor.runs/synth_1/absolute_top.vds
+# Journal file: C:/Users/Onur Ozdemir/pipelined_processor/pipelined_processor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source absolute_top.tcl -notrace

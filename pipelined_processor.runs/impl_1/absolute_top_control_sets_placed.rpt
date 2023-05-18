@@ -1,0 +1,74 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 12 14:33:39 2023
+| Host         : Onur_Ozdemir running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file absolute_top_control_sets_placed.rpt
+| Design       : absolute_top
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    23 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            5 |
+| No           | No                    | Yes                    |             195 |           54 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              28 |            6 |
+| Yes          | Yes                   | No                     |             280 |          146 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------+---------------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal        |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------+-----------------------------+---------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                             | switch_clear_IBUF         |                2 |              6 |
+|  clk_IBUF_BUFG |                             |                           |                5 |             18 |
+|  n_0_837_BUFG  | tm/DP/FtoD/E[0]             | pulse_two/AR[0]           |                6 |             28 |
+|  clk_IBUF_BUFG | pulse_one/CNT_0             | pulse_one/CNT[27]_i_1_n_1 |                8 |             28 |
+|  clk_IBUF_BUFG | pulse_two/CNT               | pulse_two/CNT[27]_i_1_n_1 |                8 |             28 |
+| ~n_0_837_BUFG  | tm/DP/MtoW/rf_reg[10][31]_0 | pulse_two/rf_reg[3][31]   |               22 |             32 |
+| ~n_0_837_BUFG  | tm/DP/MtoW/rf_reg[1][31]_0  | pulse_two/rf_reg[3][31]   |               24 |             32 |
+| ~n_0_837_BUFG  | tm/DP/MtoW/rf_reg[11][31]_0 | pulse_two/rf_reg[3][31]   |               19 |             32 |
+| ~n_0_837_BUFG  | tm/DP/MtoW/rf_reg[3][31]_0  | pulse_two/rf_reg[3][31]   |               14 |             32 |
+| ~n_0_837_BUFG  | tm/DP/MtoW/rf_reg[2][31]_0  | pulse_two/rf_reg[3][31]   |               18 |             32 |
+| ~n_0_837_BUFG  | tm/DP/MtoW/rf_reg[8][31]_0  | pulse_two/rf_reg[3][31]   |               15 |             32 |
+| ~n_0_837_BUFG  | tm/DP/MtoW/rf_reg[9][31]_0  | pulse_two/rf_reg[3][31]   |               18 |             32 |
+|  n_0_837_BUFG  |                             | pulse_two/AR[0]           |               52 |            189 |
++----------------+-----------------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 6      |                     1 |
+| 16+    |                    12 |
++--------+-----------------------+
+
+
